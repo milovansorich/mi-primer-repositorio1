@@ -1,9 +1,11 @@
 # mi-primer-repositorio1
 
-Paso 1) Abrir la consola CMD:ejecutar "py --version" , en caso que no salga nada. Descargar el interprete de python en la pagina www.phyton.org en la seccion dowload
+Paso 1) Abrir la consola CMD:ejecutar "py --version" 
 
-Paso 2) Descargar este codigo en donde dice "dowload zip" o mediante el comando "git clone"
+Paso 2) En caso de no tenerlo descargarlo en la pagina www.phyton.org 
 
-Paso 3) ejecutar en cmd un cd para introducir un archivo 
+Paso 2) Descargar el archivo holamundo.py, donde se encontrara el codigo print("Hola mundo")
 
-paso 4)
+Paso 3) En CMD escribir cd y donde se encuentra el archivo , como por ejemplo: cd download
+
+paso 4) Despues ejecutar el comando py Holamundo.py 
