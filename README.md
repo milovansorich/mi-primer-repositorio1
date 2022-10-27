@@ -1,4 +1,4 @@
-# mi-primer-repositorio1
+# Como ejecutar un Hola mundo
 
 Paso 1) Abrir la consola CMD:ejecutar "py --version" 
 
