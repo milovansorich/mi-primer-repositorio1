@@ -9,6 +9,7 @@ class product
     ##fin seccion atributos##
   
     ##metodos##
+  
   get_code()
   get_bar_code()
   get_name()
