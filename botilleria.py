@@ -10,9 +10,15 @@ class products
   ##fin seccion atributos##
   
   ##metodos##
-  ventas
+  name()
+  expiration_date()
+  bar_code()
+  price()
   
   
 
 class customers 
-  
+{
+  name= #nombre
+  id= #rut del cliente
+  cost= #costo de los productos  
