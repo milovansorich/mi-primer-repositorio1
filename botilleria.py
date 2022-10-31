@@ -99,9 +99,9 @@ class customer
 
 class order
 {
-  code= # codigo de la orden
-  ordered_at= # fecha de la orden
-  total= # total a pagar de la orden
+  code= #codigo de la orden
+  ordered_at= #fecha de la orden
+  total= #total a pagar de la orden
   
    ##metodos##
   
