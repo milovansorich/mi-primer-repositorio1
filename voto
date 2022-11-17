@@ -1,0 +1,13 @@
+class Candidate:
+    name = ""
+    party = ""
+    vote = 0
+
+    def __init__(self, party, name):
+        self.party = party
+
+    def sum_votes(self):
+        self.vote = self.vote+1
+
+candidate1=Candidate()
+candidate2=Candidate()
