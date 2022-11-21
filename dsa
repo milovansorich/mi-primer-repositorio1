@@ -1,0 +1,32 @@
+from Creationprofile import Profile
+
+def main():
+    profile=Profile("5","yayito29","messi@gmail.com","iquique123","932436522","21-03-2019","online","false")
+
+    Profile.print()
+
+main()
+
+
+class Profile:
+
+    def __init__(self,id,nickname,mail,password,created_at,cellphone,status="online",is_premium="false")
+        self.id=id
+        self.nickname=nickname
+        self.mail=mail
+        self.password=password
+        self.cellphone=cellphone
+        self.created_at=created_at
+        self.status=status
+        self.is_premium=is_premium
+
+    def print(self)
+       
+        print("el id: ", str(self.id))
+        print("el nickname es: ", str(self.nickname))
+        print("el mail: ", str(self.mail))
+        print("el password es", str(self.password))
+        print("created_at: ", str(self .created_at))
+        print("cellphone : ",str(self.password))
+        print("status: ",str(self.status))
+        print("is premium: ",str(self.is_premium
