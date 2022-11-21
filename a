@@ -1,0 +1,44 @@
+class Candidate:
+    name = ""
+    party = ""
+    vote = 0
+
+    def __init__(self, name, party):
+        self.name = name
+        self.party = party
+
+    def add_vote(self):
+        self.vote += 1
+
+candidates = []
+
+def main():
+    print("menu")
+    print("0 - agregar candidato")
+    print("1 - votar")
+    print("2 - resultados")
+    print("3 - salir")
+    option = input("ingrese opcion: ")
+
+    if option == "0":
+        name = input("ingrese nombre: ")
+        party = input("ingrese partido: ")
+        candidates.append(Candidate(name, party))
+        print("candidato agregado con  exito")
+   
+    elif option == "1":
+        index = 0
+        for c in candidates:
+            print(str(index)+" - "+c.name)
+            index += 1
+
+        candidate_idx = int(input("seleccione candidato: "))
+        candidates[candidate_idx].add_vote()
+        
+        print("voto ingresado")
+    elif option == "2":
+        for c in candidates:
+            print("votos de "+c.name+" : "+ str(c.vote))
+    elif option == "3":
+        print("hasta pronto")
+        exit()
