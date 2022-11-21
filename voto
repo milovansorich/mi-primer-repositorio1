@@ -3,11 +3,36 @@ class Candidate:
     party = ""
     vote = 0
 
-    def __init__(self, party, name):
+    def __init__(self, name, party):
+        self.name = name
         self.party = party
 
-    def sum_votes(self):
-        self.vote = self.vote+1
+    def add_vote(self):
+        self.vote += 1
 
-candidate1=Candidate()
-candidate2=Candidate()
+def main():
+    print("menu")
+    print("1 - votar")
+    print("2 - resultados")
+    print("3 - salir")
+    option = input("ingrese opcion: ")
+
+    if option == "1":
+        print("1 - "+c1.name)
+        print("2 - "+c2.name)
+        candidate = input("seleccione candidato: ")
+        if candidate == "1":
+            c1.add_vote()
+        else:
+            c2.add_vote() 
+        
+        print("voto ingresado")
+    elif option == "2":
+        print("votos de "+c1.name+" : "+ str(c1.vote))
+        print("votos de "+c2.name+" : "+ str(c2.vote))
+    elif option == "3":
+        print("hasta pronto")
+        exit()
+        
+c1= Candidate("Boric", "p1")
+c2= Candidate("Kast", "p2")
