@@ -19,5 +19,5 @@ def main():
 
     client1.account_bank()
     
-    
-main()
+if __name__ == "__main__":   
+    main()
