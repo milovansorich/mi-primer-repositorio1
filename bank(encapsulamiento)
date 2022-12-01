@@ -1,0 +1,95 @@
+class Client:
+    def __init__(self,name,last_name,run,mail,password,money = 0,total_money=0):
+        self.__name = name
+        self.__last_name = last_name
+        self.__run = run
+        self.__mail = mail
+        self.__password = password
+        self.__money = money
+        self.__total_money = total_money
+
+    def get_name(self):
+        return self.__name
+    
+    def get_last_name(self):
+        return self.__last_name
+
+    def get_run(self):
+        return self.__run
+
+    def get_mail(self):
+        return self.__mail
+
+    def get_password(self):
+        return self.__password
+
+    def get_money(self):
+        return self.__money
+
+    def get_total_money(self):
+        return self.__total_money
+    
+    def set_name(self,name):
+        self.__name = name
+    
+    def set_last_name(self, last_name):
+        self.__last_name = last_name
+
+    def set_run(self, run):
+        self.__run = run
+
+    def set_mail(self, mail):
+        self.__mail = mail
+
+    def set_password(self, password):
+        self.__password = password
+
+    def set_money(self, money):
+        self.__money = money
+
+    def set_total_money(self, total_money):
+        self.__total_money = total_money
+ 
+    def account_bank(self):
+        print("---INGRESAR CUENTA---")
+        print("nombre del cliente: ",self.__name)
+        print("apellido del cliente: ",self.__last_name)
+        print("run del cliente: ",self.__run)
+        print("mail del cliente: ",self.__mail)
+        password = (input("ingrese su contraseña: "))
+        repeat_password = (input("vuelva a ingresar la contraseña: "))
+        if (repeat_password==password):
+            print("ingreso a la cuenta")   
+            
+            print("-MENU-")    
+            print("1-ingresar dinero") 
+            print("2-retirar dinero")
+            print("3-saldo de la cuenta")
+            print("4-salir de la cuenta")
+            option= int(input("ingrese una de las opciones: "))
+            iterador=1
+
+            while (iterador<=100):
+                if(option==1):
+                    money = float(input("ingrese el dinero a depositar: "))
+                    if(money>0):
+                        self.__money+= money
+                        print("el dinero a depositar sera: ",self.__money)
+                    elif(money<=0):
+                        print("no se puede depositar esa cantidad de dinero")
+                elif(option==2):
+                    money = float(input("ingrese el dinero a retirar: "))
+                    if(self.__money>money):
+                        self.__money-= money
+                        print("el dinero a retirar sera: ",self.__money)
+                    elif(self.__money<money):
+                        print("no se puede retirar esa cantidad de dinero")    
+                elif(option==3):
+                    print("saldo actual: ",self.__money)
+                elif(option==4):
+                    print("hasta pronto")
+                    exit()  
+            else:
+                print("el gmail y la contraseña no coinciden")
+
+                iterador+= 1
