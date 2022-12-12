@@ -1,0 +1,44 @@
+class character:
+    def __init__(self,name,attack,defense,intelligence,life):
+        self.__name = name
+        self.__attack = attack
+        self.__defense = defense
+        self.__intelligence = intelligence
+        self.__life = life
+
+    def attack(self):
+
+    def defense(self):
+
+    def intelligence(self):
+
+    def life(self):
+
+class strength(character):
+    def attack(self):
+        x20%
+
+    def defense(self):
+
+    def intelligence(self):
+    
+    def life(self):
+
+class magic(character):
+    def attack(self):
+
+    def defense(self):
+
+    def intelligence(self):
+        x20%
+    def life(self):
+
+class healer(character):
+    def attack(self):
+
+    def defense(self):
+        x20%
+    def intelligence(self):
+
+    def life(self):
+    
